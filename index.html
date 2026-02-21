@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANOMIN Preschool & Daycare - Learn • Play • Grow</title>
+    <!-- Google Fonts - Nunito for playful, friendly typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION BAR
+         Sticky navigation with smooth scroll links
+    ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-icon">🌈</span>
+                <span class="logo-text">SANOMIN</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         Big title, tagline, CTA buttons, image slider
+    ============================================ -->
+    <section class="hero" id="home">
+        <!-- Floating decorative elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1">⭐</div>
+            <div class="shape shape-2">🎈</div>
+            <div class="shape shape-3">🌟</div>
+            <div class="shape shape-4">💫</div>
+            <div class="shape shape-5">🎨</div>
+        </div>
+        
+        <div class="hero-container">
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">SANOMIN</span>
+                    <span class="title-sub">Preschool & Daycare</span>
+                </h1>
+                <p class="hero-tagline">
+                    <span class="tagline-word">Learn</span>
+                    <span class="tagline-dot">•</span>
+                    <span class="tagline-word">Play</span>
+                    <span class="tagline-dot">•</span>
+                    <span class="tagline-word">Grow</span>
+                </p>
+                <p class="hero-description">
+                    A safe, nurturing space where your child discovers the joy of learning 
+                    through play, creativity, and exploration.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Enroll Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Hero Image Slider -->
+            <div class="hero-slider">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slide active">
+                        <img src="images/hero-girl-1.jpg" alt="Happy child at SANOMIN">
+                    </div>
+                    <div class="slide">
+                        <img src="images/hero-boy-1.jpg" alt="Child learning at SANOMIN">
+                    </div>
+                    <div class="slide">
+                        <img src="images/hero-girl-2.jpg" alt="Child playing at SANOMIN">
+                    </div>
+                </div>
+                <!-- Slider Controls -->
+                <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous slide">❮</button>
+                <button class="slider-btn slider-next" id="sliderNext" aria-label="Next slide">❯</button>
+                <!-- Slider Dots -->
+                <div class="slider-dots" id="sliderDots">
+                    <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F9F9F9"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         Mission, vision, why choose us, teachers
+    ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Welcome to SANOMIN</h2>
+                <p class="section-subtitle">Where every child's journey begins with love and learning</p>
+            </div>
+            
+            <!-- About Content Grid -->
+            <div class="about-grid">
+                <!-- About Image -->
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="images/about-classroom.jpg" alt="Children learning at SANOMIN">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                
+                <!-- About Content -->
+                <div class="about-content">
+                    <!-- Mission -->
+                    <div class="about-card">
+                        <div class="card-icon">🎯</div>
+                        <div class="card-content">
+                            <h3>Our Mission</h3>
+                            <p>To provide a safe, nurturing, and stimulating environment where children can develop their full potential through play-based learning and creative exploration.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Vision -->
+                    <div class="about-card">
+                        <div class="card-icon">🌟</div>
+                        <div class="card-content">
+                            <h3>Our Vision</h3>
+                            <p>To create a world where every child grows up confident, curious, and compassionate, ready to embrace life's opportunities with joy and resilience.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Why Choose Us -->
+                    <div class="about-card highlight">
+                        <div class="card-icon">💚</div>
+                        <div class="card-content">
+                            <h3>Why Choose SANOMIN?</h3>
+                            <ul class="feature-list">
+                                <li>✓ Licensed and experienced educators</li>
+                                <li>✓ Safe, child-friendly facilities</li>
+                                <li>✓ Small class sizes for individual attention</li>
+                                <li>✓ Balanced curriculum of learning and play</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Teacher Highlights -->
+            <div class="teachers-section">
+                <h3 class="teachers-title">Meet Our Dedicated Team</h3>
+                <div class="teachers-grid">
+                    <div class="teacher-card">
+                        <div class="teacher-avatar">👩‍🏫</div>
+                        <h4>Ms. Sarah</h4>
+                        <p>Lead Teacher</p>
+                        <span class="teacher-exp">10 years exp.</span>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-avatar">👨‍🏫</div>
+                        <h4>Mr. Michael</h4>
+                        <p>Early Learning</p>
+                        <span class="teacher-exp">8 years exp.</span>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-avatar">👩‍🏫</div>
+                        <h4>Ms. Emily</h4>
+                        <p>Art & Music</p>
+                        <span class="teacher-exp">6 years exp.</span>
+                    </div>
+                    <div class="teacher-card">
+                        <div class="teacher-avatar">👨‍🏫</div>
+                        <h4>Mr. David</h4>
+                        <p>Physical Ed</p>
+                        <span class="teacher-exp">7 years exp.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROGRAMS SECTION
+         Preschool, Daycare, After School
+    ============================================ -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">Our Programs</span>
+                <h2 class="section-title">Programs for Every Age</h2>
+                <p class="section-subtitle">Tailored learning experiences that grow with your child</p>
+            </div>
+            
+            <!-- Programs Grid -->
+            <div class="programs-grid">
+                <!-- Preschool Program -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/program-preschool.jpg" alt="Preschool program">
+                        <div class="program-overlay">
+                            <span class="age-badge">Ages 3-5</span>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-icon">📚</div>
+                        <h3>Preschool</h3>
+                        <p>Our preschool program focuses on early literacy, numeracy, and social skills through interactive play and structured activities.</p>
+                        <ul class="program-features">
+                            <li>🎨 Art & Creativity</li>
+                            <li>🔤 Early Literacy</li>
+                            <li>🔢 Basic Math</li>
+                            <li>🤝 Social Skills</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <!-- Daycare Program -->
+                <div class="program-card featured">
+                    <div class="program-image">
+                        <img src="images/gallery-nap.jpg" alt="Daycare program">
+                        <div class="program-overlay">
+                            <span class="age-badge">Ages 2-6</span>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-icon">🏠</div>
+                        <h3>Daycare</h3>
+                        <p>Full-day care with a perfect balance of learning, play, and rest in a safe, nurturing home-away-from-home environment.</p>
+                        <ul class="program-features">
+                            <li>🍎 Healthy Meals</li>
+                            <li>😴 Nap Time</li>
+                            <li>🎮 Supervised Play</li>
+                            <li>📱 Daily Updates</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- After School Program -->
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/gallery-learning.jpg" alt="After school program">
+                        <div class="program-overlay">
+                            <span class="age-badge">Ages 5-8</span>
+                        </div>
+                    </div>
+                    <div class="program-content">
+                        <div class="program-icon">🎯</div>
+                        <h3>After School</h3>
+                        <p>Engaging after-school activities including homework help, sports, arts, and STEM projects for school-age children.</p>
+                        <ul class="program-features">
+                            <li>📝 Homework Help</li>
+                            <li>⚽ Sports & Games</li>
+                            <li>🔬 STEM Activities</li>
+                            <li>🎭 Drama & Arts</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FACILITIES SECTION
+         Safe classrooms, play area, technology, meals
+    ============================================ -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">Our Facilities</span>
+                <h2 class="section-title">Designed for Safety & Learning</h2>
+                <p class="section-subtitle">State-of-the-art facilities that inspire curiosity and ensure safety</p>
+            </div>
+            
+            <!-- Facilities Grid -->
+            <div class="facilities-grid">
+                <!-- Safe Classrooms -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrapper">
+                        <span class="facility-icon">🏫</span>
+                    </div>
+                    <h3>Safe Classrooms</h3>
+                    <p>Bright, spacious classrooms with child-safe furniture, non-toxic materials, and age-appropriate learning centers.</p>
+                    <div class="facility-tags">
+                        <span class="tag">Child-Safe</span>
+                        <span class="tag">Spacious</span>
+                    </div>
+                </div>
+                
+                <!-- Play Area -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrapper">
+                        <span class="facility-icon">🎪</span>
+                    </div>
+                    <h3>Play Area</h3>
+                    <p>Indoor and outdoor play spaces with soft flooring, climbing structures, and plenty of room for active play.</p>
+                    <div class="facility-tags">
+                        <span class="tag">Indoor</span>
+                        <span class="tag">Outdoor</span>
+                    </div>
+                </div>
+                
+                <!-- Learning Technology -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrapper">
+                        <span class="facility-icon">💻</span>
+                    </div>
+                    <h3>Learning Technology</h3>
+                    <p>Age-appropriate educational technology including interactive whiteboards, tablets, and educational apps.</p>
+                    <div class="facility-tags">
+                        <span class="tag">Interactive</span>
+                        <span class="tag">Modern</span>
+                    </div>
+                </div>
+                
+                <!-- Meals & Care -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrapper">
+                        <span class="facility-icon">🍎</span>
+                    </div>
+                    <h3>Meals & Care</h3>
+                    <p>Nutritious, balanced meals prepared fresh daily. We accommodate dietary restrictions and allergies.</p>
+                    <div class="facility-tags">
+                        <span class="tag">Healthy</span>
+                        <span class="tag">Fresh</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Facility Stats -->
+            <div class="facility-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Sq. Ft. Space</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Classrooms</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Play Areas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS SECTION
+         Parent reviews in infinite marquee
+    ============================================ -->
+    <section class="testimonials">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Parents Say</h2>
+                <p class="section-subtitle">Hear from families who trust us with their little ones</p>
+            </div>
+            
+            <!-- Testimonials Marquee -->
+            <div class="testimonials-marquee">
+                <div class="marquee-track" id="marqueeTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"SANOMIN has been a blessing for our family. Our daughter loves going to school every day and has learned so much!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-1.jpg" alt="Jennifer M.">
+                            <div class="author-info">
+                                <h4>Jennifer M.</h4>
+                                <p>Mother of Emma, 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The teachers are amazing! They truly care about each child and keep us updated throughout the day. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-2.jpg" alt="Robert K.">
+                            <div class="author-info">
+                                <h4>Robert K.</h4>
+                                <p>Father of Liam, 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The facilities are top-notch and the curriculum is excellent. My son has grown so much socially and academically."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-3.jpg" alt="Susan T.">
+                            <div class="author-info">
+                                <h4>Susan T.</h4>
+                                <p>Grandmother of Noah, 5</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"SANOMIN has been a blessing for our family. Our daughter loves going to school every day and has learned so much!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-1.jpg" alt="Jennifer M.">
+                            <div class="author-info">
+                                <h4>Jennifer M.</h4>
+                                <p>Mother of Emma, 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The teachers are amazing! They truly care about each child and keep us updated throughout the day. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-2.jpg" alt="Robert K.">
+                            <div class="author-info">
+                                <h4>Robert K.</h4>
+                                <p>Father of Liam, 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The facilities are top-notch and the curriculum is excellent. My son has grown so much socially and academically."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-3.jpg" alt="Susan T.">
+                            <div class="author-info">
+                                <h4>Susan T.</h4>
+                                <p>Grandmother of Noah, 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALLERY SECTION
+         Grid layout with hover animation and lightbox
+    ============================================ -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">Gallery</span>
+                <h2 class="section-title">Moments of Joy</h2>
+                <p class="section-subtitle">Glimpses of learning, play, and growth at SANOMIN</p>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="images/gallery-art.jpg" alt="Art class">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <p>Creative Art Time</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="images/gallery-play.jpg" alt="Play area">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <p>Fun Play Time</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="images/gallery-story.jpg" alt="Story time">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <p>Story Time</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="images/gallery-meal.jpg" alt="Meal time">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <p>Healthy Meals</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="images/gallery-outdoor.jpg" alt="Outdoor play">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <p>Outdoor Adventures</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="images/gallery-learning.jpg" alt="Learning time">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <p>Learning Through Play</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">❮</button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery image" id="lightboxImage">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">❯</button>
+    </div>
+
+    <!-- ============================================
+         CONTACT SECTION
+         Contact form, map, phone & address
+    ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">Contact Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you! Reach out to schedule a tour or enroll your child.</p>
+            </div>
+            
+            <!-- Contact Grid -->
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Visit Us</h3>
+                        <p>123 Sunshine Street<br>Happy Valley, CA 90210</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                        <p class="info-note">Mon-Fri, 7am-6pm</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:hello@sanomin.com">hello@sanomin.com</a></p>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                            <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                            <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                            <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your child or ask a question..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader">⏳</span>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess">
+                            ✅ Thank you! We'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Map -->
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.715220363292!2d-118.2453186847874!3d34.05223418060604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648fa1d4803%3A0xdec27bf11f9fd336!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1635959567400!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="SANOMIN Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         Social links, quick links, copyright
+    ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">🌈</span>
+                        <span class="logo-text">SANOMIN</span>
+                    </a>
+                    <p>Nurturing young minds through play, learning, and love since 2009.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Programs -->
+                <div class="footer-links">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#programs">Preschool</a></li>
+                        <li><a href="#programs">Daycare</a></li>
+                        <li><a href="#programs">After School</a></li>
+                        <li><a href="#contact">Summer Camp</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📍 123 Sunshine Street<br>Happy Valley, CA 90210</p>
+                    <p>📞 <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p>✉️ <a href="mailto:hello@sanomin.com">hello@sanomin.com</a></p>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 SANOMIN Preschool & Daycare. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">⬆️</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
